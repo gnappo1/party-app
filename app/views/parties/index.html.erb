@@ -1,0 +1,10 @@
+<h1>Parties</h1>
+
+<% if @parties.length > 0 %>
+    <ul>
+        <% @parties.each do |party| %>
+            <li><%= link_to party.name, party %></li><br>
+        <% end %>
+    </ul>
+<% else %>
+<% end %>
