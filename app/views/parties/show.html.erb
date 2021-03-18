@@ -1,1 +1,7 @@
 <h1><%= @party.name %></h1>
+<h4>Date: <%= @party.date%></h4>
+<h4>Private: <%= @party.private%></h4>
+<h4>Budget: <%= @party.budget%></h4>
+
+<%= link_to "Edit", edit_party_path(@party)%>
+<%= link_to "Delete", @party, method: "delete", data: { confirm: "Are you sure?" } %>
